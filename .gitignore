@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
@@ -34,8 +32,6 @@ build/
 
 ### VS Code ###
 .vscode/
-=======
->>>>>>> dac358c (subindo o projeto para o repositório)
 target/
 pom.xml.tag
 pom.xml.releaseBackup
@@ -53,7 +49,3 @@ buildNumber.properties
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
-<<<<<<< HEAD
-=======
->>>>>>> 7b10533237a9ef635b5c689ed31a03394be29f21
->>>>>>> dac358c (subindo o projeto para o repositório)
