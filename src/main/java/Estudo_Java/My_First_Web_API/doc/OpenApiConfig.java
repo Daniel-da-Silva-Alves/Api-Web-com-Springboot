@@ -11,7 +11,7 @@ public class OpenApiConfig {
     public GroupedOpenApi usersApi() {
         return GroupedOpenApi.builder()
                 .group("Users API")  // Nome do grupo que será exibido na documentação
-                .pathsToMatch("/users/**")  // Inclui todos os endpoints que começam com "/users"
+                .pathsToMatch("/api/users/**")  // Inclui todos os endpoints que começam com "/users"
                 .build();
 
     }
