@@ -1,57 +1,61 @@
-# My First RestAPI with Spring Boot
+# Minha Primeira REST API com Spring Boot
 
-This project is a simple REST API developed using Spring Boot, demonstrating the fundamental concepts of RESTful web services. The API includes essential CRUD (Create, Read, Update, Delete) operations and uses Swagger for API documentation.
+Este projeto consiste em uma API REST desenvolvida com **Spring Boot**, cujo objetivo é demonstrar a aplicação prática dos conceitos fundamentais de serviços web RESTful. A solução implementa operações essenciais de **CRUD** (Create, Read, Update, Delete) e conta com a integração do **Swagger** para documentação interativa dos endpoints.
 
-## Features
-- 🌐 **RESTful API**: Implements GET, POST, PUT, and DELETE HTTP methods.
-- 📄 **Swagger Integration**: Automatically generated API documentation accessible through `/swagger-ui`.
-- 📦 **Spring Boot Framework**: Fast and efficient configuration using Spring Boot’s built-in capabilities.
-- 🛠️ **Dependency Management**: Managed with Maven for simplified builds and dependencies.
+## Funcionalidades
+- 🌐 **API RESTful**: Implementação completa dos métodos HTTP GET, POST, PUT e DELETE.  
+- 📄 **Swagger**: Documentação da API gerada automaticamente, disponível em `/swagger-ui`.  
+- 📦 **Spring Boot**: Estruturação e configuração ágil, utilizando os recursos nativos do framework.  
+- 🛠️ **Gerenciamento de Dependências**: Utilização do **Maven** para compilar, empacotar e gerenciar bibliotecas externas.  
 
-## Technologies Used
-- **Java 17**
-- **Spring Boot**
-- **Spring Web**
-- **Swagger**
-- **Maven**
+## Tecnologias Utilizadas
+- **Java 17**  
+- **Spring Boot**  
+- **Spring Web**  
+- **Swagger (OpenAPI)**  
+- **Maven**  
 
-## How to Run the Project
-1. Clone the repository:
+## Execução do Projeto
+1. Clone o repositório:  
    ```bash
    git clone https://github.com/Daniel-da-Silva-Alves/My-First-Web-API-with-Springboot.git
    ```
-2. Navigate to the project directory:
+
+2. Acesse o diretório do projeto:
+
    ```bash
    cd my-first-restapi-springboot
    ```
-3. Build the project using Maven:
+3. Compile o projeto com Maven:
+
    ```bash
    mvn clean install
    ```
-4. Run the application:
+4. Inicie a aplicação:
+
    ```bash
    mvn spring-boot:run
    ```
 
-## API Documentation
-Access the API documentation with Swagger by visiting the following URL after starting the application:
+## Documentação da API
+
+Após a execução da aplicação, a documentação interativa estará disponível em:
 
 ```
 http://localhost:8080/swagger-ui.html
 ```
 
-## Endpoints Overview
-| Method | Endpoint        | Description                |
-|--------|-----------------|----------------------------|
-| GET    | /api/resource    | Retrieve all resources     |
-| POST   | /api/resource    | Create a new resource      |
-| GET    | /api/resource/{id} | Retrieve resource by ID    |
-| PUT    | /api/resource/{id} | Update resource by ID      |
-| DELETE | /api/resource/{id} | Delete resource by ID      |
+## Endpoints Disponíveis
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+| Método | Endpoint           | Descrição                   |
+| ------ | ------------------ | --------------------------- |
+| GET    | /api/resource      | Retorna todos os recursos   |
+| POST   | /api/resource      | Cria um novo recurso        |
+| GET    | /api/resource/{id} | Retorna um recurso pelo ID  |
+| PUT    | /api/resource/{id} | Atualiza um recurso pelo ID |
+| DELETE | /api/resource/{id} | Remove um recurso pelo ID   |
 
----
+## Licença
 
-You can customize this description by adding more information or adapting it to your specific project.
+Este projeto está licenciado sob os termos da **MIT License**. Para mais detalhes, consulte o arquivo [LICENSE](LICENSE).
+
