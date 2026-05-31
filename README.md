@@ -95,6 +95,7 @@ http://localhost:8080/swagger-ui.html
 | `GET` | `/api/users` | Lista todos os usuários |
 | `GET` | `/api/users/{username}` | Busca usuário por username |
 | `POST` | `/api/users` | Cria um novo usuário |
+| `PUT` | `/api/users/{id}` | Atualiza usuário por ID |
 | `DELETE` | `/api/users/{id}` | Remove usuário por ID |
 
 ## Author

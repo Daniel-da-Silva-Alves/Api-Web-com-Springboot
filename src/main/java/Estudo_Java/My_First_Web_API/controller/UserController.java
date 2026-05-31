@@ -26,7 +26,7 @@ public class UserController {
             @ApiResponse(responseCode = "400", description = "Invalid parameters"),
             @ApiResponse(responseCode = "500", description = "Error when searching for data"),
     })
-    @GetMapping(" ") //listar todos os usuários
+    @GetMapping //listar todos os usuários
     public List<User> getUsers(){
         return repository.findAll();
     }
@@ -64,8 +64,21 @@ public class UserController {
             @ApiResponse(responseCode = "400", description = "Invalid parameters"),
             @ApiResponse(responseCode = "500", description = "Error when uploading user"),
     })
-    @PostMapping ()
-    public void  postUser(@RequestBody User user){
+    @PostMapping
+    public void postUser(@RequestBody User user){
+        repository.save(user);
+    }
+
+    @Operation(summary = "Update a user by ID", method = "PUT")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "User updated successfully"),
+            @ApiResponse(responseCode = "422", description = "Invalid request data"),
+            @ApiResponse(responseCode = "400", description = "Invalid parameters"),
+            @ApiResponse(responseCode = "500", description = "Error when updating user"),
+    })
+    @PutMapping("/{id}") //Atualizar usuário por id
+    public void putUser(@PathVariable("id") Integer id, @RequestBody User user){
+        user.setId(id);
         repository.save(user);
     }
 }
